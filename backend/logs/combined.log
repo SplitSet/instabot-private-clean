@@ -1,0 +1,86 @@
+{
+  message: 'Database connection disabled via DISABLE_DB',
+  level: 'warn',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:05:37'
+}
+{
+  message: 'Database connection disabled via DISABLE_DB',
+  level: 'warn',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:07:34'
+}
+{
+  message: 'Server running on port 5000 in development mode',
+  level: 'info',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:07:34'
+}
+{
+  message: 'SIGINT received, shutting down gracefully',
+  level: 'info',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:14:16'
+}
+{
+  message: 'Database connection disabled via DISABLE_DB',
+  level: 'warn',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:14:39'
+}
+{
+  message: 'Server running on port 5000 in development mode',
+  level: 'info',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:14:39'
+}
+{
+  service: 'instabot-api',
+  ip: '::1',
+  userAgent: 'curl/8.4.0',
+  timestamp: '2025-09-08 15:14:44',
+  level: 'info',
+  message: 'GET /health'
+}
+{
+  message: 'Database connection disabled via DISABLE_DB',
+  level: 'warn',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:14:51'
+}
+{
+  message: 'Server running on port 5000 in development mode',
+  level: 'info',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:14:51'
+}
+{
+  message: 'Database connection disabled via DISABLE_DB',
+  level: 'warn',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:16:21'
+}
+{
+  message: 'Server running on port 5000 in development mode',
+  level: 'info',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:16:21'
+}
+{
+  message: 'Database connection disabled via DISABLE_DB',
+  level: 'warn',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:16:25'
+}
+{
+  message: 'Server running on port 5000 in development mode',
+  level: 'info',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:16:25'
+}
+{
+  message: 'SIGTERM received, shutting down gracefully',
+  level: 'info',
+  service: 'instabot-api',
+  timestamp: '2025-09-08 17:27:44'
+}

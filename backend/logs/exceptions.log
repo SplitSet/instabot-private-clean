@@ -1,0 +1,780 @@
+{
+  error: Error: Cannot find module '../services/EmailService'
+  Require stack:
+  - /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js
+  - /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/routes/auth.js
+  - /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+      at Module._load (node:internal/modules/cjs/loader:981:27)
+      at Module.require (node:internal/modules/cjs/loader:1231:19)
+      at require (node:internal/modules/helpers:177:18)
+      at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js:6:22)
+      at Module._compile (node:internal/modules/cjs/loader:1364:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+      at Module.load (node:internal/modules/cjs/loader:1203:32)
+      at Module._load (node:internal/modules/cjs/loader:1019:12)
+      at Module.require (node:internal/modules/cjs/loader:1231:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js',
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/routes/auth.js',
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../services/EmailService'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/routes/auth.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    "Error: Cannot find module '../services/EmailService'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/routes/auth.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:981:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
+    '    at require (node:internal/modules/helpers:177:18)\n' +
+    '    at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js:6:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1203:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1019:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: "Error: Cannot find module '../services/EmailService'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/routes/auth.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:981:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
+    '    at require (node:internal/modules/helpers:177:18)\n' +
+    '    at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js:6:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1203:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1019:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Mon Sep 08 2025 14:53:11 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 78956,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend',
+    execPath: '/Users/ankurpandey/.nvm/versions/node/v18.20.8/bin/node',
+    version: 'v18.20.8',
+    argv: [
+      '/Users/ankurpandey/.nvm/versions/node/v18.20.8/bin/node',
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js'
+    ],
+    memoryUsage: {
+      rss: 102514688,
+      heapTotal: 59670528,
+      heapUsed: 39487176,
+      external: 22760080,
+      arrayBuffers: 19968990
+    }
+  },
+  os: {
+    loadavg: [ 13.71435546875, 7.74560546875, 4.888671875 ],
+    uptime: 6653980
+  },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1140,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 981,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 177,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1364,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1422,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1203,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1019,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'instabot-api',
+  timestamp: '2025-09-08 14:53:11'
+}
+{
+  error: Error: Cannot find module '../services/EmailService'
+  Require stack:
+  - /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js
+  - /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/routes/auth.js
+  - /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+      at Module._load (node:internal/modules/cjs/loader:981:27)
+      at Module.require (node:internal/modules/cjs/loader:1231:19)
+      at require (node:internal/modules/helpers:177:18)
+      at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js:6:22)
+      at Module._compile (node:internal/modules/cjs/loader:1364:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+      at Module.load (node:internal/modules/cjs/loader:1203:32)
+      at Module._load (node:internal/modules/cjs/loader:1019:12)
+      at Module.require (node:internal/modules/cjs/loader:1231:19) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js',
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/routes/auth.js',
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module '../services/EmailService'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/routes/auth.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    "Error: Cannot find module '../services/EmailService'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/routes/auth.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:981:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
+    '    at require (node:internal/modules/helpers:177:18)\n' +
+    '    at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js:6:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1203:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1019:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: "Error: Cannot find module '../services/EmailService'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/routes/auth.js\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:981:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
+    '    at require (node:internal/modules/helpers:177:18)\n' +
+    '    at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js:6:22)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1203:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1019:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Mon Sep 08 2025 14:53:47 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 79414,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend',
+    execPath: '/Users/ankurpandey/.nvm/versions/node/v18.20.8/bin/node',
+    version: 'v18.20.8',
+    argv: [
+      '/Users/ankurpandey/.nvm/versions/node/v18.20.8/bin/node',
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js'
+    ],
+    memoryUsage: {
+      rss: 102367232,
+      heapTotal: 59932672,
+      heapUsed: 39480208,
+      external: 22804421,
+      arrayBuffers: 20013331
+    }
+  },
+  os: {
+    loadavg: [ 16.22900390625, 9.0859375, 5.49462890625 ],
+    uptime: 6654016
+  },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1140,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 981,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 177,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/controllers/authController.js',
+      function: null,
+      line: 6,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1364,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1422,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1203,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1019,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  service: 'instabot-api',
+  timestamp: '2025-09-08 14:53:47'
+}
+{
+  error: Error: Cannot find module './routes/user'
+  Require stack:
+  - /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+      at Module._load (node:internal/modules/cjs/loader:981:27)
+      at Module.require (node:internal/modules/cjs/loader:1231:19)
+      at require (node:internal/modules/helpers:177:18)
+      at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js:17:20)
+      at Module._compile (node:internal/modules/cjs/loader:1364:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+      at Module.load (node:internal/modules/cjs/loader:1203:32)
+      at Module._load (node:internal/modules/cjs/loader:1019:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module './routes/user'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    "Error: Cannot find module './routes/user'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:981:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
+    '    at require (node:internal/modules/helpers:177:18)\n' +
+    '    at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js:17:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1203:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1019:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)',
+  stack: "Error: Cannot find module './routes/user'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:981:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
+    '    at require (node:internal/modules/helpers:177:18)\n' +
+    '    at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js:17:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1203:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1019:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)',
+  exception: true,
+  date: 'Mon Sep 08 2025 14:56:15 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 82122,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend',
+    execPath: '/Users/ankurpandey/.nvm/versions/node/v18.20.8/bin/node',
+    version: 'v18.20.8',
+    argv: [
+      '/Users/ankurpandey/.nvm/versions/node/v18.20.8/bin/node',
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js'
+    ],
+    memoryUsage: {
+      rss: 102973440,
+      heapTotal: 60194816,
+      heapUsed: 40578464,
+      external: 22838221,
+      arrayBuffers: 20047131
+    }
+  },
+  os: {
+    loadavg: [ 16.19873046875, 11.9453125, 7.23095703125 ],
+    uptime: 6654164
+  },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1140,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 981,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 177,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1364,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1422,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1203,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1019,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 128,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  service: 'instabot-api',
+  timestamp: '2025-09-08 14:56:15'
+}
+{
+  error: Error: Cannot find module './routes/user'
+  Require stack:
+  - /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+      at Module._load (node:internal/modules/cjs/loader:981:27)
+      at Module.require (node:internal/modules/cjs/loader:1231:19)
+      at require (node:internal/modules/helpers:177:18)
+      at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js:17:20)
+      at Module._compile (node:internal/modules/cjs/loader:1364:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+      at Module.load (node:internal/modules/cjs/loader:1203:32)
+      at Module._load (node:internal/modules/cjs/loader:1019:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module './routes/user'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    "Error: Cannot find module './routes/user'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:981:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
+    '    at require (node:internal/modules/helpers:177:18)\n' +
+    '    at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js:17:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1203:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1019:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)',
+  stack: "Error: Cannot find module './routes/user'\n" +
+    'Require stack:\n' +
+    '- /Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js\n' +
+    '    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:981:27)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
+    '    at require (node:internal/modules/helpers:177:18)\n' +
+    '    at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js:17:20)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1203:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1019:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)',
+  exception: true,
+  date: 'Mon Sep 08 2025 15:00:44 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 86394,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend',
+    execPath: '/Users/ankurpandey/.nvm/versions/node/v18.20.8/bin/node',
+    version: 'v18.20.8',
+    argv: [
+      '/Users/ankurpandey/.nvm/versions/node/v18.20.8/bin/node',
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js'
+    ],
+    memoryUsage: {
+      rss: 104202240,
+      heapTotal: 60194816,
+      heapUsed: 40703120,
+      external: 22804055,
+      arrayBuffers: 20012965
+    }
+  },
+  os: {
+    loadavg: [ 21.56396484375, 16.4521484375, 10.44775390625 ],
+    uptime: 6654433
+  },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._resolveFilename',
+      line: 1140,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 27,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 981,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 177,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1364,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1422,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1203,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1019,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 128,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    }
+  ],
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:00:44'
+}
+{
+  error: TypeError: app.use() requires a middleware function
+      at Function.use (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/node_modules/express/lib/application.js:217:11)
+      at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js:128:5)
+      at Module._compile (node:internal/modules/cjs/loader:1364:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+      at Module.load (node:internal/modules/cjs/loader:1203:32)
+      at Module._load (node:internal/modules/cjs/loader:1019:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+      at node:internal/main/run_main_module:28:49,
+  level: 'error',
+  message: 'uncaughtException: app.use() requires a middleware function\n' +
+    'TypeError: app.use() requires a middleware function\n' +
+    '    at Function.use (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/node_modules/express/lib/application.js:217:11)\n' +
+    '    at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js:128:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1203:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1019:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  stack: 'TypeError: app.use() requires a middleware function\n' +
+    '    at Function.use (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/node_modules/express/lib/application.js:217:11)\n' +
+    '    at Object.<anonymous> (/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js:128:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1203:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1019:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)\n' +
+    '    at node:internal/main/run_main_module:28:49',
+  exception: true,
+  date: 'Mon Sep 08 2025 15:05:37 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 90987,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend',
+    execPath: '/Users/ankurpandey/.nvm/versions/node/v18.20.8/bin/node',
+    version: 'v18.20.8',
+    argv: [
+      '/Users/ankurpandey/.nvm/versions/node/v18.20.8/bin/node',
+      '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js'
+    ],
+    memoryUsage: {
+      rss: 102957056,
+      heapTotal: 60194816,
+      heapUsed: 40867384,
+      external: 22767906,
+      arrayBuffers: 19976816
+    }
+  },
+  os: {
+    loadavg: [ 4.06591796875, 11.23681640625, 10.06689453125 ],
+    uptime: 6654726
+  },
+  trace: [
+    {
+      column: 11,
+      file: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/node_modules/express/lib/application.js',
+      function: 'Function.use',
+      line: 217,
+      method: 'use',
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/ankurpandey/Desktop/Comment-Deleter-InstaBot/backend/src/server.js',
+      function: null,
+      line: 128,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1364,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1422,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1203,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1019,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 128,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 49,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 28,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'instabot-api',
+  timestamp: '2025-09-08 15:05:37'
+}
