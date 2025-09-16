@@ -92,6 +92,21 @@ app.get('/health', (req, res) => {
   });
 });
 
+// Root endpoint for platform health checks (Render defaults to "/")
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    message: 'InstaBot backend running',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+  });
+});
+
+// Support HEAD on root for lightweight health probes
+app.head('/', (req, res) => {
+  res.status(200).end();
+});
+
 // API routes (minimal)
 app.use('/api/auth', authRoutes);
 app.use('/api/moderation', moderationRoutes);
