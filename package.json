@@ -1,0 +1,13 @@
+{
+  "name": "instabot-private",
+  "version": "1.0.0",
+  "description": "Private InstaBot for comment management",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js",
+    "dev": "node start.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

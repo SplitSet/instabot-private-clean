@@ -1,0 +1,12 @@
+{
+  "name": "instabot-src",
+  "version": "1.0.0",
+  "description": "InstaBot startup from src directory",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
