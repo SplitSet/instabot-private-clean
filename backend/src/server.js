@@ -191,13 +191,13 @@ process.on('SIGINT', () => {
 process.on('uncaughtException', (err) => {
   console.error('🔴 SERVER.JS - Uncaught Exception:', err);
   logger.error('Uncaught Exception:', err);
-  process.exit(1);
+  // Do not exit immediately; let platform logs capture details
 });
 
 process.on('unhandledRejection', (err) => {
   console.error('🔴 SERVER.JS - Unhandled Rejection:', err);
   logger.error('Unhandled Rejection:', err);
-  process.exit(1);
+  // Do not exit immediately; let platform logs capture details
 });
 
 module.exports = app;
