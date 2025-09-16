@@ -18,10 +18,13 @@ const connectDB = async () => {
     };
 
     // Log connection attempt
-    logger.info(`Attempting to connect to MongoDB at ${mongoURI.replace(/\/\/[^:]+:[^@]+@/, '//****:****@')}`);
+    const sanitizedURI = mongoURI.replace(/\/\/[^:]+:[^@]+@/, '//****:****@');
+    console.log(`🔗 MongoDB: Attempting connection to ${sanitizedURI}`);
+    logger.info(`Attempting to connect to MongoDB at ${sanitizedURI}`);
 
     const conn = await mongoose.connect(mongoURI, options);
 
+    console.log(`✅ MongoDB Connected: ${conn.connection.host}`);
     logger.info(`MongoDB Connected: ${conn.connection.host}`);
 
     // Handle connection events

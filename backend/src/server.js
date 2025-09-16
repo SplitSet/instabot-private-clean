@@ -129,10 +129,30 @@ app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
+console.log(`🎯 Attempting to start server on port ${PORT}...`);
+
 server.listen(PORT, () => {
+  console.log(`✅ Server successfully listening on port ${PORT}`);
   logger.info(`Server running on port ${PORT} in ${process.env.NODE_ENV || 'development'} mode`);
   
+  // Log successful startup
+  console.log('🚀 Server startup complete:');
+  console.log(`  - Port: ${PORT}`);
+  console.log(`  - Environment: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`  - PID: ${process.pid}`);
+  console.log(`  - Platform: ${process.platform}`);
+  console.log(`  - Node Version: ${process.version}`);
+  
   // Services initialization omitted in minimal boot
+});
+
+server.on('error', (error) => {
+  console.error('🔴 Server error:', error);
+  logger.error('Server error:', error);
+  if (error.code === 'EADDRINUSE') {
+    console.error(`Port ${PORT} is already in use`);
+  }
+  process.exit(1);
 });
 
 // Graceful shutdown
@@ -154,11 +174,13 @@ process.on('SIGINT', () => {
 
 // Handle uncaught exceptions
 process.on('uncaughtException', (err) => {
+  console.error('🔴 SERVER.JS - Uncaught Exception:', err);
   logger.error('Uncaught Exception:', err);
   process.exit(1);
 });
 
 process.on('unhandledRejection', (err) => {
+  console.error('🔴 SERVER.JS - Unhandled Rejection:', err);
   logger.error('Unhandled Rejection:', err);
   process.exit(1);
 });
