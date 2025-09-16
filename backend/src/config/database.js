@@ -12,7 +12,8 @@ const connectDB = async () => {
       serverSelectionTimeoutMS: 5000,
       socketTimeoutMS: 45000,
       family: 4, // Use IPv4, skip trying IPv6
-      autoIndex: process.env.NODE_ENV !== 'production', // Don't build indexes in production
+      autoIndex: false, // Disable automatic index building to prevent duplicate warnings
+      autoCreate: false, // Don't auto-create collections
       retryWrites: true,
     };
 
