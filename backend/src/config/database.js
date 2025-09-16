@@ -8,40 +8,66 @@ const connectDB = async () => {
     const options = {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      maxPoolSize: 10, // Maintain up to 10 socket connections
-      serverSelectionTimeoutMS: 5000, // Keep trying to send operations for 5 seconds
-      socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
-      bufferMaxEntries: 0, // Disable mongoose buffering
-      bufferCommands: false, // Disable mongoose buffering
+      maxPoolSize: 10,
+      serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 45000,
+      family: 4, // Use IPv4, skip trying IPv6
+      autoIndex: process.env.NODE_ENV !== 'production', // Don't build indexes in production
+      retryWrites: true,
     };
 
-    await mongoose.connect(mongoURI, options);
+    // Log connection attempt
+    logger.info(`Attempting to connect to MongoDB at ${mongoURI.replace(/\/\/[^:]+:[^@]+@/, '//****:****@')}`);
 
-    logger.info(`MongoDB Connected: ${mongoose.connection.host}`);
+    const conn = await mongoose.connect(mongoURI, options);
+
+    logger.info(`MongoDB Connected: ${conn.connection.host}`);
 
     // Handle connection events
     mongoose.connection.on('error', (err) => {
       logger.error('MongoDB connection error:', err);
+      // Don't exit process on connection errors, let Mongoose handle reconnection
     });
 
     mongoose.connection.on('disconnected', () => {
-      logger.warn('MongoDB disconnected');
+      logger.warn('MongoDB disconnected - Mongoose will try to reconnect automatically');
     });
 
     mongoose.connection.on('reconnected', () => {
-      logger.info('MongoDB reconnected');
+      logger.info('MongoDB reconnected successfully');
     });
 
-    // Graceful shutdown
-    process.on('SIGINT', async () => {
-      await mongoose.connection.close();
-      logger.info('MongoDB connection closed due to app termination');
-      process.exit(0);
-    });
+    // Handle process termination
+    const gracefulExit = async () => {
+      try {
+        await mongoose.connection.close();
+        logger.info('MongoDB connection closed through app termination');
+        process.exit(0);
+      } catch (err) {
+        logger.error('Error during MongoDB connection closure:', err);
+        process.exit(1);
+      }
+    };
+
+    // Handle graceful shutdown
+    process.on('SIGINT', gracefulExit);
+    process.on('SIGTERM', gracefulExit);
 
   } catch (error) {
-    logger.error('MongoDB connection failed:', error.message);
-    process.exit(1);
+    logger.error('MongoDB connection failed:', {
+      error: error.message,
+      stack: error.stack,
+      code: error.code,
+      name: error.name
+    });
+
+    // Only exit if it's the initial connection that failed
+    if (!mongoose.connection.readyState) {
+      logger.error('Initial MongoDB connection failed - exiting process');
+      process.exit(1);
+    } else {
+      logger.warn('MongoDB error occurred but connection is still alive');
+    }
   }
 };
 
